@@ -11,10 +11,10 @@ struct books
 }book1,book2;
 
 void printbook(struct books book){
-    printf("book title:%s\n",book1.title);
-    printf("book author:%s\n",book1.author);
-    printf("book subject:%s\n",book1.subject);
-    printf("book_id:%d\n",book1.book_id);
+    printf("book title:%s\n",book.title);
+    printf("book author:%s\n",book.author);
+    printf("book subject:%s\n",book.subject);
+    printf("book_id:%d\n",book.book_id);
 }
 
 int main(){
@@ -24,13 +24,12 @@ int main(){
     strcpy(book1.subject,"my real life");
     book1.book_id=1453;
 
-    
-
     strcpy(book2.title,"an engineer lifes in one day");
     strcpy(book2.author,"can");
     strcpy(book2.subject,"mylife");
     book2.book_id=1071;
 
+    printbook(book1);
     printbook(book2);
 
     return 0;

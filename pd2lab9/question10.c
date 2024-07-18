@@ -5,8 +5,8 @@ enum sanfoundry{a,b,c=5};
 int main(){
 
     enum sanfoundry s;
-    b = 10;
-    printf("%d",b);
+    s=b;//ı changed like this.
+    printf("%d",s);
     return 0;
 }
 

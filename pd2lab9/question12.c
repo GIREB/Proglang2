@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 struct student
 {
@@ -12,7 +13,7 @@ struct student
 int main(){
 
     int i;
-    struct student array[10];
+    struct student array[50];
     for(i=0;i<3;i++)
     {
         printf("Enter student number: ");
@@ -22,7 +23,7 @@ int main(){
         printf("enter surname:");
         scanf("%s", array[i].surname);
         printf("enter midhtermgrade:");
-        scanf("%d",&array[i].midtermgrade);
+        scanf("%d", &array[i].midtermgrade);
     }
 
     for (int i = 0; i < 3; i++)
